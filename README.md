@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# BLOG + Firebase
 
-You can use the [editor on GitHub](https://github.com/daniepusb/firebase-blogeek-platzi/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##Descripción
+Vamos a construir un blog, siguiendo el curso de Platzi, "Curso de Firebase para Web".
+Usaremos diferentes servicios de Firebase: creación y autenticación de usuarios por email y redes sociales, correos electrónicos para validar y recuperar contraseñas, reglas de seguridad, almacenamiento de publicaciones e imágenes en Firebase Storage, despliegue de nuestras aplicaciones con Firebase Hosting y notificaciones en tiempo real para anunciar cambios de nuestro blog.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Empecemos
+1. Clonar o bifurcar este repositorio
+2. Crear proyecto en Firebase
+3. Copiar configuración del proyecto en el archivo `public\js\config\configFirebase.js`
+Curso de Firebase para Web
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/daniepusb/firebase-blogeek-platzi/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### [Curso Platzi](https://platzi.com/cursos/firebase-web/)
