@@ -5,7 +5,7 @@ $(() => {
   // TODO: Adicionar el service worker
 
   // Init Firebase nuevamente
-  firebase.initializeApp(config);
+  firebase.initializeApp(firebaseConfig);
 
   // TODO: Registrar LLave publica de messaging
 
@@ -21,7 +21,7 @@ $(() => {
   //$('#btnInicioSesion').text('Salir')
   //$('#avatar').attr('src', user.photoURL)
   //$('#avatar').attr('src', 'imagenes/usuario_auth.png')
-  //$('#btnInicioSesion').text('Iniciar Sesión')
+  //$('#btnInicioSesion').text('Iniciar Sesion')
   //$('#avatar').attr('src', 'imagenes/usuario.png')
 
   // TODO: Evento boton inicio sesion
@@ -36,8 +36,14 @@ $(() => {
   })
 
   $('#avatar').click(() => {
-    //$('#avatar').attr('src', 'imagenes/usuario.png')
-    //Materialize.toast(`SignOut correcto`, 4000)
+    firebase.auth().signOut()
+    .then(() => {
+      $('#avatar').attr('src', 'imagenes/usuario.png')
+      Materialize.toast(`SignOut correcto`, 4000)
+    })
+    .catch(error =>{
+      Materialize.toast(`Error al realizar SignOut ${error}`, 4000)
+    })
   })
 
   $('#btnTodoPost').click(() => {
